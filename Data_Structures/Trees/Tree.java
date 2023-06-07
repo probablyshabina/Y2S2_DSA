@@ -38,7 +38,7 @@ public class Tree {
 			while(true) {
 				parentNode = currentNode;
 				
-				if(currentNode.key > key) {//Go right
+				if(currentNode.key < key) {//Go right
 					currentNode = currentNode.rightChild;
 					
 					if(currentNode == null) {//Is right node available
